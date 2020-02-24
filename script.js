@@ -51,5 +51,6 @@ $(document).ready(function () {
         var textID = e.target.id.replace("save-img", "text");
         var textElement = document.getElementById(textID); 
         localStorage.setItem(textID, textElement.value); 
+        console.log(e);
     }
 });
