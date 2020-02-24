@@ -1,0 +1,88 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+      <h3 id="currentTime" class="time"></h3>
+    </header>
+    <div id="saveMyData" class="container saveForm">
+      <!-- Timeblocks go here. -->
+      <!-- These div's are rows with 3 columns.  -->
+      <!-- Firt column is the row. -->
+      <!-- Second row is the text area.  This will change color depending on if it is int he past,present or future. -->
+      <!-- Third row allow you to click save the text from row 2. -->
+      <div class="row">
+          <div  class=" col-md-2 bg-light hour"><h5 id="time9">9:00am</h5></div> 
+          <div id="color9" class="col-md-9 saveFile row"><textarea  id='text9' class="text" rows="5" cols="80" placeholder="Add Event"></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn "><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id="save-img9"></h5>
+          </div> 
+      </div>
+      <div class="row">
+          <div class=" col-md-2 bg-light hour"><h5 id="time10">10:00am</h5></div> 
+          <div id="color10" class="col-md-9 row"><textarea class="text" id='text10' rows="5" cols="80" placeholder="Add Event"></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn save"><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id="save-img10"></h5></div> 
+      </div>
+      <div class="row">
+          <div class=" col-md-2 bg-light hour"><h5 id="time11">11:00am</h5></div> 
+          <div id="color11" class="col-md-9 row"><textarea class="text" id='text11' rows="5" cols="80" placeholder="Add Event"></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn save"><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id="save-img11"></h5></div> 
+      </div>
+      <div class="row">
+          <div class=" col-md-2 bg-light hour"><h5 cid="time12" >12:00pm</h5></div> 
+          <div id="color12" class="col-md-9 row"><textarea class="text" id='text12' rows="5" cols="80" placeholder="Add Event"></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn save"><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id="save-img12"></h5></div> 
+      </div>
+      <div class="row">
+          <div class=" col-md-2 bg-light hour"><h5 id="time13" >1:00pm</h5></div> 
+          <div id="color13" class="col-md-9 row"><textarea class="text" id='text1' rows="5" cols="80" placeholder="Add Event"></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn save"><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id='save-img1'></h5></div> 
+      </div>
+      <div class="row">
+          <div class=" col-md-2 bg-light hour"><h5 id="time14" >2:00pm</h5></div> 
+          <div id="color14" class="col-md-9 row"><textarea class="text" id='text2' rows="5" cols="80"placeholder="Add Event" ></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn save"><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id="save-img2"></h5></div> 
+      </div>
+      <div class="row">
+          <div class=" col-md-2 bg-light hour"><h5 id="time15" >3:00pm</h5></div> 
+          <div id="color15" class="col-md-9 row"><textarea class="text" id='text3' rows="5" cols="80" placeholder="Add Event"></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn save"><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id="save-img3"></h5></div> 
+      </div>
+      <div class="row">
+          <div class=" col-md-2 bg-light hour"><h5 id="time16" >4:00pm</h5></div> 
+          <div id="color16" class="col-md-9 row"><textarea class="text" id='text4' rows="5" cols="80" placeholder="Add Event"></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn save"><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id="save-img4"></h5></div> 
+      </div>
+      <div class="row">
+          <div class=" col-md-2 bg-light hour"><h5 id="time17" >5:00pm</h5></div> 
+          <div id="color17" class="col-md-9 row"><textarea class="text" id='text5' rows="5" cols="80" placeholder="Add Event"></textarea></div>
+          <div class="col-md-1 bg-primary saveBtn save"><h5><img src="./images/lockFavicon.png" alt="Save" class="p-2 save-img" id="save-img5"></h5></div>
+      </div>
+    </div> 
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
